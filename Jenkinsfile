@@ -9,11 +9,13 @@ pipeline {
     }
     stage("test") {
       steps {
+        echo 'Buildt the application\n'
         echo 'Testing the application...'        
       }
     }
     stage("deploy") {
       steps {
+        echo 'Tested the application\n'
         echo 'Deploying the application...'        
       }
     }
